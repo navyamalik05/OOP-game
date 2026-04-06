@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level width="1024" height="1024" start-y="572" start-x="468">
+	<declarations>
+		<background id="i001" image="background0.png"/>
+		<platform id="i005" left-image="metalLeft.png" mid-image="metalMid.png" right-image="metalRight.png"/>
+		<coin id="i008" image="coin10.png" value="10"/>
+		<coin id="i009" image="coin100.png" value="100"/>
+	</declarations>
+	<items>
+		<background id="i001" x="512" y="512"/>
+
+		<background id="i001" x="1536" y="512"/>
+
+		<platform id="i005" x="464" y="720" width="160" height="32"/>
+		<coin id="i008" x="600" y="500"/>
+		<coin id="i009" x="650" y="450"/>
+	</items>
+</level>

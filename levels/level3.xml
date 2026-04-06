@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level width="8192" height="1024" start-y="796" start-x="788">
+	<declarations>
+		<!-- Background -->
+		<background id="i002" image="background3.png"/>
+
+		<!-- Custom platform set -->
+		<platform id="i003" left-image="platformNew.png" mid-image="platformNew.png" right-image="platformNew.png"/>
+
+		<!-- Metal platforms -->
+		<platform id="i005" left-image="metalLeft.png" mid-image="metalMid.png" right-image="metalRight.png"/>
+
+		<!-- Walls -->
+		<wall id="i006" image="wall1.png"/>
+		<wall id="i007" image="wall2.png"/>
+
+		<!-- Crystal blocker as a wall -->
+		<wall id="crystal" image="crystals.png"/>
+
+		<!-- Coins -->
+		<coin id="i008" image="coin10.png" value="10"/>
+		<coin id="i009" image="coin100.png" value="100"/>
+
+		<!-- Goal / Enemies -->
+		<goalpost id="i011" image="goalpost.png"/>
+		<enemy id="i012" image="U-M.png"/>
+		<enemy id="i013" image="ND.png"/>
+
+		<!-- Power-ups -->
+		<power-up id="powerup-jump" image="powerup-doublejump.png"/>
+		<power-up id="powerup-dash" image="powerup-speedboost.png"/>
+		<power-up id="powerup-coinrush" image="powerup-coinrush.png"/>
+		<power-up id="powerup-coin" image="sparty.png"/>
+
+		<!-- Boss -->
+		<boss-goalpost id="boss" image="sparty-fish.png" health="3"/>
+	</declarations>
+
+	<items>
+		<!-- Background tiles -->
+		<background id="i002" x="-2732" y="512"/>
+		<background id="i002" x="0" y="512"/>
+		<background id="i002" x="2732" y="512"/>
+		<background id="i002" x="5464" y="512"/>
+		<background id="i002" x="8196" y="512"/>
+
+
+		<!-- START SECTION: longer runway with a small coin arc -->
+		<platform id="i003" x="544" y="944" width="896" height="64"/>
+		<coin id="i008" x="520" y="860"/>
+		<coin id="i008" x="580" y="820"/>
+		<coin id="i009" x="640" y="780"/>
+		<coin id="i008" x="700" y="820"/>
+		<coin id="i008" x="760" y="860"/>
+
+		<!-- Early vertical variety + small crystal teaches jump-over -->
+		<platform id="i003" x="1040" y="816" width="224" height="64"/>
+		<platform id="i003" x="1264" y="688" width="224" height="64"/>
+		<platform id="i003" x="1488" y="560" width="256" height="64"/>
+		<wall id="crystal" x="1488" y="496" width="64" height="96"/>  <!-- sits on the platform -->
+		<coin id="i008" x="1400" y="520"/>
+		<coin id="i008" x="1560" y="520"/>
+
+		<!-- Metal interlude and coins -->
+		<platform id="i005" x="1712" y="304" width="160" height="32"/>
+		<coin id="i008" x="1760" y="80"/>
+		<platform id="i005" x="1872" y="400" width="160" height="32"/>
+		<coin id="i009" x="1952" y="112"/>
+		<platform id="i005" x="2032" y="496" width="160" height="32"/>
+		<coin id="i008" x="2048" y="240"/>
+
+		<!-- Rebuilt mid run with stagger + guard walls -->
+		<platform id="i003" x="2464" y="944" width="704" height="64"/>
+		<platform id="i005" x="2224" y="848" width="224" height="32"/>
+		<wall id="i007" x="2160" y="896" width="32" height="64"/>
+		<wall id="i007" x="2288" y="896" width="32" height="64"/>
+		<enemy id="i012" x="2462" y="853" type="vertical"/>
+		<coin id="i009" x="2464" y="560"/>
+		<coin id="i009" x="2464" y="464"/>
+
+		<!-- Short metal pair -->
+		<platform id="i005" x="2704" y="848" width="224" height="32"/>
+		<wall id="i007" x="2640" y="896" width="32" height="64"/>
+		<wall id="i007" x="2768" y="896" width="32" height="64"/>
+
+		<!-- ===== COIN-RUSH LANE (upper fast line) + safe lower lane ===== -->
+		<!-- Lower safe lane -->
+		<platform id="i003" x="3104" y="976" width="992" height="64"/>
+		<!-- Upper dash lane -->
+		<platform id="i005" x="3104" y="720" width="992" height="32"/>
+		<!-- Entry power-ups for the rush -->
+		<power-up id="powerup-jump" x="3118" y="668" type="double-jump" width="64" height="64"/>
+		<power-up id="powerup-coinrush" x="3230" y="668" type="coin-rush" width="64" height="64"/>
+		<!-- Coin ribbon across the upper lane -->
+		<coin id="i008" x="3300" y="660"/>
+		<coin id="i008" x="3420" y="660"/>
+		<coin id="i008" x="3540" y="660"/>
+		<coin id="i009" x="3660" y="640"/>
+		<coin id="i008" x="3780" y="660"/>
+		<coin id="i008" x="3900" y="660"/>
+		<coin id="i008" x="4020" y="660"/>
+
+		<!-- Stairs back up with crystals to vary timing -->
+		<platform id="i003" x="4224" y="900" width="288" height="64"/>
+		<platform id="i003" x="4464" y="800" width="256" height="64"/>
+		<platform id="i003" x="4704" y="700" width="256" height="64"/>
+		<wall id="crystal" x="4704" y="636" width="64" height="96"/>
+		<platform id="i003" x="4944" y="600" width="256" height="64"/>
+		<wall id="crystal" x="4944" y="536" width="64" height="96"/>
+		<coin id="i009" x="5000" y="560"/>
+
+		<!-- Mid enemies/coins refreshed -->
+		<coin id="i008" x="4768" y="880"/>
+		<coin id="i008" x="4800" y="752"/>
+		<coin id="i008" x="4896" y="912"/>
+		<coin id="i008" x="4896" y="816"/>
+		<coin id="i008" x="4896" y="656"/>
+		<enemy id="i013" x="5021" y="885" type="vertical"/>
+		<coin id="i008" x="5152" y="688"/>
+		<coin id="i008" x="5184" y="848"/>
+		<coin id="i008" x="5280" y="752"/>
+		<coin id="i008" x="5312" y="880"/>
+
+		<!-- Power spike + coinrush refill -->
+		<platform id="i005" x="5536" y="720" width="384" height="32"/>
+		<coin id="i009" x="5408" y="624"/>
+		<coin id="i009" x="5568" y="592"/>
+		<power-up id="powerup-coinrush" x="5687" y="853" type="coin-rush" width="64" height="64"/>
+
+		<!-- Small metal ladder -->
+		<platform id="i005" x="5744" y="464" width="160" height="32"/>
+		<platform id="i005" x="5904" y="240" width="160" height="32"/>
+		<platform id="i005" x="6080" y="464" width="192" height="32"/>
+		<wall id="crystal" x="6080" y="400" width="64" height="96"/>
+
+		<!-- Long approach into boss arena (ice) -->
+		<platform id="i003" x="6368" y="944" width="768" height="64"/>
+
+		<!-- Dash pickup tucked above; gate with tall walls -->
+		<platform id="i005" x="6368" y="368" width="192" height="32"/>
+		<wall id="i007" x="6320" y="672" width="32" height="576"/>
+		<coin id="i009" x="6336" y="112"/>
+		<power-up id="powerup-dash" x="6368" y="300" type="dash" width="64" height="64"/>
+		<wall id="i007" x="6416" y="672" width="32" height="576"/>
+		<coin id="i009" x="6432" y="80"/>
+
+		<!-- Boss arena floor -->
+		<platform id="i003" x="6672" y="688" width="480" height="32"/>
+
+		<!-- BOSS guarding the runout -->
+		<boss-goalpost id="boss" x="6528" y="860"/>
+
+		<!-- Arena dressing -->
+		<coin id="i009" x="6528" y="304"/>
+		<coin id="i009" x="6624" y="464"/>
+		<coin id="i008" x="6656" y="240"/>
+		<coin id="i008" x="6816" y="304"/>
+		<enemy id="i012" x="7006" y="885"/>
+
+		<!-- A few crystal blockers to spice last jumps -->
+		<wall id="crystal" x="1488" y="496" width="64" height="96"/>  <!-- already above -->
+		<wall id="crystal" x="1712" y="240" width="64" height="96"/>
+		<wall id="crystal" x="3104" y="656" width="64" height="96"/>
+		<wall id="crystal" x="3760" y="816" width="64" height="96"/>
+		<wall id="crystal" x="5536" y="656" width="64" height="96"/>
+		<wall id="crystal" x="6672" y="624" width="64" height="96"/>
+	</items>
+</level>
